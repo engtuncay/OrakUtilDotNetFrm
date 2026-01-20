@@ -1,0 +1,20 @@
+﻿using OrakUtilDotNetFrm.DbGeneric;
+using OrakYazilimLib.DbGeneric;
+using OrakYazilimLib.Util.core;
+using System.Configuration;
+
+namespace OrakYazilimLib.Util.web
+{
+  public static class FiConfMngr
+  {
+
+    public static string GetWebConfigValue(string customkey)
+    {
+      return FiString.OrEmpty(ConfigurationManager.AppSettings[customkey]);
+    }
+    public static string GetWebConfigValueByFic(FiCol fiCol)
+    {
+      return FiString.OrEmpty(ConfigurationManager.AppSettings[fiCol.ofcTxFieldName]);
+    }
+  }
+}

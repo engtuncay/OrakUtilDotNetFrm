@@ -1,0 +1,66 @@
+﻿using OrakYazilimLib.Util.core;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Text.RegularExpressions;
+
+namespace OrakUtilDotNetFrm.DbGeneric
+{
+    public class FiSqlParameter
+    {
+        public string field { get; set; }
+        public object value { get; set; }
+        public bool isDefault { get; set; }
+        public string clField { get; set; }
+
+        public FiSqlParameter(string prmField, object prmValue)
+        {
+            this.field = prmField;
+            this.value = prmValue;
+        }
+
+        public FiSqlParameter()
+        {
+        }
+
+        public static List<SqlParameter> ConvertToSqlParamsList(List<FiSqlParameter> listPrmSqlParameters)
+        {
+            if (listPrmSqlParameters == null) return new List<SqlParameter>();
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+            foreach (FiSqlParameter sqlParameter in listPrmSqlParameters)
+            {
+                string sqlVariable = sqlParameter.field;
+                if (!Regex.IsMatch(sqlVariable, "^@.*"))
+                {
+                    sqlVariable = "@" + sqlVariable;
+                }
+
+                list.Add(new SqlParameter(sqlParameter.field,sqlParameter.value));
+            }
+
+            return list;
+        }
+
+        public static List<SqlParameter> ConvertToSqlParamsList(FiKeybean fkbParams)
+        {
+            if (fkbParams == null) return new List<SqlParameter>();
+
+            List<SqlParameter> list = new List<SqlParameter>();
+
+            foreach (KeyValuePair<string, object> sqlParameter in fkbParams)
+            {
+                string fieldName = sqlParameter.Key;
+
+                if (!Regex.IsMatch(fieldName, "^@.*"))
+                {
+                    fieldName = "@" + fieldName;
+                }
+
+                list.Add(new SqlParameter(fieldName, sqlParameter.Value));
+            }
+
+            return list;
+        }
+    }
+}
