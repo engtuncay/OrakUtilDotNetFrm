@@ -29,25 +29,25 @@ namespace OrakYazilimLib.Util.core
     public void AddFiCol(FiCol ficol, object objValue)
     {
       GetSetFiColInit().Add(ficol);
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     public void AddForceFiCol(FiCol ficol, object objValue)
     {
-      if (ContainsKey(ficol.ofcTxFieldName))
+      if (ContainsKey(ficol.fcTxFieldName))
       {
-        Remove(ficol.ofcTxFieldName);
+        Remove(ficol.fcTxFieldName);
       }
       else
       {
         GetSetFiColInit().Add(ficol);
       }
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     public void AddFieldByFiCol(FiCol ficol, object objValue)
     {
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     public void AddFieldByFim(FiMeta fiMeta, object objValue)
@@ -62,7 +62,7 @@ namespace OrakYazilimLib.Util.core
 
     public void AddFieldBy(FiCol ficol, object objValue)
     {
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     /**
@@ -70,7 +70,7 @@ namespace OrakYazilimLib.Util.core
      */
     public void AddField(FiCol fiCol, object objValue)
     {
-      AddOverWrite(fiCol.ofcTxFieldName, objValue);
+      AddOverWrite(fiCol.fcTxFieldName, objValue);
     }
 
     public void AddOverWrite(string key, object objValue)
@@ -88,9 +88,9 @@ namespace OrakYazilimLib.Util.core
      */
     public void AddFieldIfNot(FiCol ficol, object objValue)
     {
-      if (!ContainsKey(ficol.ofcTxFieldName))
+      if (!ContainsKey(ficol.fcTxFieldName))
       {
-        Add(ficol.ofcTxFieldName, objValue);
+        Add(ficol.fcTxFieldName, objValue);
       }
     }
 
@@ -101,17 +101,17 @@ namespace OrakYazilimLib.Util.core
 
     public bool ContainsKeyByFiCol(FiCol fiCol)
     {
-      return ContainsKey(fiCol.ofcTxFieldName);
+      return ContainsKey(fiCol.fcTxFieldName);
     }
 
     public bool ContainsAnyKeyByFiCol(params FiCol[] fiCols)
     {
-      return fiCols.Any(fiCol => ContainsKey(fiCol.ofcTxFieldName));
+      return fiCols.Any(fiCol => ContainsKey(fiCol.fcTxFieldName));
     }
 
     public bool ContainsAllKeyByFiCol(params FiCol[] fiCols)
     {
-      return fiCols.All(fiCol => ContainsKey(fiCol.ofcTxFieldName));
+      return fiCols.All(fiCol => ContainsKey(fiCol.fcTxFieldName));
     }
     public void ConvertCsvToListString(string txKey)
     {
@@ -155,11 +155,11 @@ namespace OrakYazilimLib.Util.core
     }
 
     public string GetFieldAsString(FiCol fiCol){
-      return GetAsString(fiCol.ofcTxFieldName);
+      return GetAsString(fiCol.fcTxFieldName);
     }
 
     public object GetFieldAsObject(FiCol fiCol){
-      return GetAsObject(fiCol.ofcTxFieldName);
+      return GetAsObject(fiCol.fcTxFieldName);
     }
     public object GetAsObject(string txKey)
     {
@@ -175,10 +175,10 @@ namespace OrakYazilimLib.Util.core
     }
     public FkbList GetFieldAsFkbList(FiCol fiCol)
     {
-      if (this.ContainsKey(fiCol.ofcTxFieldName))
+      if (this.ContainsKey(fiCol.fcTxFieldName))
       {
         // Değeri al ve string türüne çevir.
-        object value = this[fiCol.ofcTxFieldName];
+        object value = this[fiCol.fcTxFieldName];
 
         if (value is FkbList fkbList)
         {
@@ -195,15 +195,15 @@ namespace OrakYazilimLib.Util.core
     }
     public void RemoveField(FiCol fiCol)
     {
-      Remove(fiCol.ofcTxFieldName);
+      Remove(fiCol.fcTxFieldName);
     }
     public bool? GetFieldAsBool(FiCol psrsBoSuccess)
     {
       // Eğer sözlük belirtilen anahtarı içeriyorsa:
-      if (this.ContainsKey(psrsBoSuccess.ofcTxFieldName))
+      if (this.ContainsKey(psrsBoSuccess.fcTxFieldName))
       {
         // Değeri al ve string türüne çevir.
-        object value = this[psrsBoSuccess.ofcTxFieldName];;
+        object value = this[psrsBoSuccess.fcTxFieldName];;
 
         if(value is bool boValue)
         {
@@ -218,9 +218,9 @@ namespace OrakYazilimLib.Util.core
     public double? GetFieldAsDouble(FiCol fiCol)
     {
 
-      if (this.ContainsKey(fiCol.ofcTxFieldName))
+      if (this.ContainsKey(fiCol.fcTxFieldName))
       {
-        object value = this[fiCol.ofcTxFieldName];
+        object value = this[fiCol.fcTxFieldName];
 
         if(value is double dbValue)
         {
@@ -236,9 +236,9 @@ namespace OrakYazilimLib.Util.core
     public int? GetFieldAsInt(FiCol fiCol)
     {
 
-      if (this.ContainsKey(fiCol.ofcTxFieldName))
+      if (this.ContainsKey(fiCol.fcTxFieldName))
       {
-        object value = this[fiCol.ofcTxFieldName];
+        object value = this[fiCol.fcTxFieldName];
 
         if(value is int ntValue)
         {

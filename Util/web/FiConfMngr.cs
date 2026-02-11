@@ -14,7 +14,7 @@ namespace OrakYazilimLib.Util.web
     }
     public static string GetWebConfigValueByFic(FiCol fiCol)
     {
-      return FiString.OrEmpty(ConfigurationManager.AppSettings[fiCol.ofcTxFieldName]);
+      return FiString.OrEmpty(ConfigurationManager.AppSettings[fiCol.fcTxFieldName]);
     }
   }
 }

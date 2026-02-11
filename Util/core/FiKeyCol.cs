@@ -27,25 +27,25 @@ namespace OrakYazilimLib.Util.core
     public void AddFiCol(FiCol ficol, FiCol objValue)
     {
       GetSetFiColInit().Add(ficol);
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     public void AddForceFiCol(FiCol ficol, FiCol objValue)
     {
-      if (ContainsKey(ficol.ofcTxFieldName))
+      if (ContainsKey(ficol.fcTxFieldName))
       {
-        Remove(ficol.ofcTxFieldName);
+        Remove(ficol.fcTxFieldName);
       }
       else
       {
         GetSetFiColInit().Add(ficol);
       }
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     public void AddField(FiCol ficol, FiCol objValue)
     {
-      Add(ficol.ofcTxFieldName, objValue);
+      Add(ficol.fcTxFieldName, objValue);
     }
 
     /**
@@ -53,12 +53,12 @@ namespace OrakYazilimLib.Util.core
      */
     public void AddCheckField(FiCol ficol, FiCol objValue)
     {
-      AddForce(ficol.ofcTxFieldName, objValue);
+      AddForce(ficol.fcTxFieldName, objValue);
     }
 
     public void AddFieldForce(FiCol fiCol, FiCol objValue)
     {
-      AddForce(fiCol.ofcTxFieldName, objValue);
+      AddForce(fiCol.fcTxFieldName, objValue);
     }
 
     public void AddForce(string key, FiCol objValue)
@@ -75,9 +75,9 @@ namespace OrakYazilimLib.Util.core
      */
     public void AddFieldIfNot(FiCol ficol, FiCol objValue)
     {
-      if (!ContainsKey(ficol.ofcTxFieldName))
+      if (!ContainsKey(ficol.fcTxFieldName))
       {
-        Add(ficol.ofcTxFieldName, objValue);
+        Add(ficol.fcTxFieldName, objValue);
       }
     }
 
@@ -88,12 +88,12 @@ namespace OrakYazilimLib.Util.core
 
     public bool ContainsKeyByFiCol(FiCol fiCol)
     {
-      return ContainsKey(fiCol.ofcTxFieldName);
+      return ContainsKey(fiCol.fcTxFieldName);
     }
 
     public bool ContainsAnyKeyByFiCol(params FiCol[] fiCols)
     {
-      return fiCols.Any(fiCol => ContainsKey(fiCol.ofcTxFieldName));
+      return fiCols.Any(fiCol => ContainsKey(fiCol.fcTxFieldName));
     }
 
     // public void ConvertCsvToListString(string txKey)
@@ -131,7 +131,7 @@ namespace OrakYazilimLib.Util.core
     }
 
     public string GetFieldAsString(FiCol fiCol){
-      return GetAsString(fiCol.ofcTxFieldName);
+      return GetAsString(fiCol.fcTxFieldName);
     }
     public object GetAsObject(string txKey)
     {
@@ -147,10 +147,10 @@ namespace OrakYazilimLib.Util.core
     }
     public FkbList GetFieldAsFkbList(FiCol fiCol)
     {
-      if (this.ContainsKey(fiCol.ofcTxFieldName))
+      if (this.ContainsKey(fiCol.fcTxFieldName))
       {
         // Değeri al ve string türüne çevir.
-        object value = this[fiCol.ofcTxFieldName];
+        object value = this[fiCol.fcTxFieldName];
 
         if (value is FkbList fkbList)
         {

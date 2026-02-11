@@ -19,12 +19,12 @@ namespace OrakYazilimLib.DbUtil
 
         public void AddFi(FiCol fiField, Object objValue)
         {
-            Add(new FiSqlParameter(fiField.ofcTxFieldName, objValue));
+            Add(new FiSqlParameter(fiField.fcTxFieldName, objValue));
         }
 
         public FiListFiSqlParam BuildAddFi(FiCol fiField, Object objValue)
         {
-            Add(new FiSqlParameter(fiField.ofcTxFieldName, objValue));
+            Add(new FiSqlParameter(fiField.fcTxFieldName, objValue));
             return this;
         }
     }

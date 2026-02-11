@@ -56,7 +56,7 @@ namespace OrakYazilimLib.UtilXml
      */
     public string GetElemByRefAsTx(FiCol fiCol)
     {
-      return GetTxFirstElement(fiCol.ofcTxRefField);
+      return GetTxFirstElement(fiCol.fcTxRefField);
     }
 
     /**
@@ -64,7 +64,7 @@ namespace OrakYazilimLib.UtilXml
      */
     public double GetElemByRefAsDouble(FiCol fiCol, int? lnScale = null)
     {
-      string txFirstElement = GetTxFirstElement(fiCol.ofcTxRefField);
+      string txFirstElement = GetTxFirstElement(fiCol.fcTxRefField);
 
       if (lnScale != null)
       {

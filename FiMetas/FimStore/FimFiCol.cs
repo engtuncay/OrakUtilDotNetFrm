@@ -6,145 +6,145 @@
   public class FimFiCol
   {
 
-    public static FiMeta OfcTxDesc()
+    public static FiMeta FcTxDesc()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxDesc");
+      FiMeta fiMeta = new FiMeta("fcTxDesc");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxPrefix()
+    public static FiMeta FcTxPrefix()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxPrefix");
+      FiMeta fiMeta = new FiMeta("fcTxPrefix");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxEntityName()
+    public static FiMeta FcTxEntityName()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxEntityName");
+      FiMeta fiMeta = new FiMeta("fcTxEntityName");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxFieldName()
+    public static FiMeta FcTxFieldName()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxFieldName");
+      FiMeta fiMeta = new FiMeta("fcTxFieldName");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxFieldType()
+    public static FiMeta FcTxFieldType()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxFieldType");
+      FiMeta fiMeta = new FiMeta("fcTxFieldType");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxHeader()
+    public static FiMeta FcTxHeader()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxHeader");
+      FiMeta fiMeta = new FiMeta("fcTxHeader");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxDbField()
+    public static FiMeta FcTxDbField()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxDbField");
+      FiMeta fiMeta = new FiMeta("fcTxDbField");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxRefField()
+    public static FiMeta FcTxRefField()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxRefField");
+      FiMeta fiMeta = new FiMeta("fcTxRefField");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcLnLength()
+    public static FiMeta FcLnLength()
     {
-      FiMeta fiMeta = new FiMeta("ofcLnLength");
+      FiMeta fiMeta = new FiMeta("fcLnLength");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcLnPrecision()
+    public static FiMeta FcLnPrecision()
     {
-      FiMeta fiMeta = new FiMeta("ofcLnPrecision");
+      FiMeta fiMeta = new FiMeta("fcLnPrecision");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcLnScale()
+    public static FiMeta FcLnScale()
     {
-      FiMeta fiMeta = new FiMeta("ofcLnScale");
+      FiMeta fiMeta = new FiMeta("fcLnScale");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcBoNullable()
+    public static FiMeta FcBoNullable()
     {
-      FiMeta fiMeta = new FiMeta("ofcBoNullable");
+      FiMeta fiMeta = new FiMeta("fcBoNullable");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxIdType()
+    public static FiMeta FcTxIdType()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxIdType");
+      FiMeta fiMeta = new FiMeta("fcTxIdType");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcBoTransient()
+    public static FiMeta FcBoTransient()
     {
-      FiMeta fiMeta = new FiMeta("ofcBoTransient");
+      FiMeta fiMeta = new FiMeta("fcBoTransient");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcBoUnique()
+    public static FiMeta FcBoUnique()
     {
-      FiMeta fiMeta = new FiMeta("ofcBoUnique");
+      FiMeta fiMeta = new FiMeta("fcBoUnique");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcBoUniqGro1()
+    public static FiMeta FcBoUniqGro1()
     {
-      FiMeta fiMeta = new FiMeta("ofcBoUniqGro1");
+      FiMeta fiMeta = new FiMeta("fcBoUniqGro1");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcTxDefValue()
+    public static FiMeta FcTxDefValue()
     {
-      FiMeta fiMeta = new FiMeta("ofcTxDefValue");
+      FiMeta fiMeta = new FiMeta("fcTxDefValue");
 
       return fiMeta;
     }
 
 
-    public static FiMeta OfcLnId()
+    public static FiMeta FcLnId()
     {
-      FiMeta fiMeta = new FiMeta("ofcLnId");
+      FiMeta fiMeta = new FiMeta("fcLnId");
 
       return fiMeta;
     }

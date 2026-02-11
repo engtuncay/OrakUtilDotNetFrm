@@ -22,11 +22,11 @@ namespace OrakUtilDotNetFrm.DataContainer
     {
       dynamic obj = new System.Dynamic.ExpandoObject();
 
-      if(ficol.ofcTxFieldName != null) obj.ofcTxFieldName = ficol.ofcTxFieldName;
-      if(ficol.ofcTxHeader != null) obj.ofcTxHeader = ficol.ofcTxHeader;
-      if(ficol.ofcLnLength != null) obj.ofcLength = ficol.ofcLnLength;
-      if(ficol.ofcLnPrecision != null) obj.ofcPrecision = ficol.ofcLnPrecision;
-      if(ficol.ofcTxFieldDesc != null) obj.ofcFieldDesc = ficol.ofcTxFieldDesc;
+      if(ficol.fcTxFieldName != null) obj.fcTxFieldName = ficol.fcTxFieldName;
+      if(ficol.fcTxHeader != null) obj.fcTxHeader = ficol.fcTxHeader;
+      if(ficol.fcLnLength != null) obj.fcLength = ficol.fcLnLength;
+      if(ficol.fcLnPrecision != null) obj.fcPrecision = ficol.fcLnPrecision;
+      if(ficol.fcTxFieldDesc != null) obj.fcFieldDesc = ficol.fcTxFieldDesc;
 
       return obj;
     }

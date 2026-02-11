@@ -81,12 +81,12 @@ namespace OrakYazilimLib.FiExtensions
      */
     public static object GetFieldAsObj(this DataTable dataTable, int lnRowNo, FiCol fiCol)
     {
-      return GetCellAsObjectFi(dataTable, lnRowNo, fiCol.ofcTxFieldName);
+      return GetCellAsObjectFi(dataTable, lnRowNo, fiCol.fcTxFieldName);
     }
 
     public static int GetFieldAsIntOrZero(this DataTable dataTable, int lnRowNo, FiCol fiCol)
     {
-      object objVAlue = GetCellAsObjectFi(dataTable, lnRowNo, fiCol.ofcTxFieldName);
+      object objVAlue = GetCellAsObjectFi(dataTable, lnRowNo, fiCol.fcTxFieldName);
 
       if (objVAlue == null) return 0;
 
@@ -98,7 +98,7 @@ namespace OrakYazilimLib.FiExtensions
      */
     public static string GetFieldAsStr(this DataTable dataTable, int lnRowNo, FiCol fiCol)
     {
-      return GetCellAsStringFi(dataTable, lnRowNo, fiCol.ofcTxFieldName);
+      return GetCellAsStringFi(dataTable, lnRowNo, fiCol.fcTxFieldName);
     }
 
     // DataTable'dan bir sütunu silen extension metot

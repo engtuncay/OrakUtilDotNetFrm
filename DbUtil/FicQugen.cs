@@ -28,7 +28,7 @@ namespace OrakYazilimLib.DbUtil
 
                 if(index > 0) sb.Append(",");
 
-                sb.Append($" {iFiTableMeta.GetITxPrefix()}.{fiCol.GetOfcTxDbFieldOr()} {fiCol.ofcTxFieldName} ");
+                sb.Append($" {iFiTableMeta.GetITxPrefix()}.{fiCol.GetOfcTxDbFieldOr()} {fiCol.fcTxFieldName} ");
             }
 
             sb.Append($" FROM {iFiTableMeta.GetITxTableName()} {iFiTableMeta.GetITxPrefix()}");

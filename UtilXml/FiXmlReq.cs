@@ -54,7 +54,7 @@ namespace OrakYazilimLib.UtilXml
     }
     public void DeactiveField(FiCol fiCol)
     {
-      this.txXml = FiXmlUtil.DeActivateParam(this.txXml, fiCol.ofcTxFieldName);
+      this.txXml = FiXmlUtil.DeActivateParam(this.txXml, fiCol.fcTxFieldName);
     }
 
   }
