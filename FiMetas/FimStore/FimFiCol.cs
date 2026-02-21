@@ -1,4 +1,6 @@
-﻿namespace OrakYazilimLib.FiMetas.FimStore
+﻿using OrakUtilDotNetFrm.Util.core;
+
+namespace OrakYazilimLib.FiMetas.FimStore
 {
   // Codegen v2
   using OrakYazilimLib.Util.core;

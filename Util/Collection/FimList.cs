@@ -1,4 +1,5 @@
-﻿using OrakYazilimLib.AdoNetHelper;
+﻿using OrakUtilDotNetFrm.Util.core;
+using OrakYazilimLib.AdoNetHelper;
 using OrakYazilimLib.Util.core;
 using System.Collections.Generic;
 

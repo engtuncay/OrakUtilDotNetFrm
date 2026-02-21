@@ -1,4 +1,5 @@
-﻿using OrakYazilimLib.Util;
+﻿using OrakUtilDotNetFrm.Util.core;
+using OrakYazilimLib.Util;
 using System;
 
 namespace OrakUtilDotNetFrm.DataContainer

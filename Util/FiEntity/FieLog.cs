@@ -1,4 +1,5 @@
-﻿using OrakYazilimLib.Util.core;
+﻿using OrakUtilDotNetFrm.Util.core;
+using OrakYazilimLib.Util.core;
 
 namespace OrakYazilimLib.Util.FiEntity
 {
@@ -13,7 +14,7 @@ namespace OrakYazilimLib.Util.FiEntity
 
     public FieLog(FiMeta fimType, string txMess)
     {
-      this.txType = fimType.txKey; //txType;
+      this.txType = fimType.ftTxKey; //txType;
       this.txMess = txMess;
     }
   }

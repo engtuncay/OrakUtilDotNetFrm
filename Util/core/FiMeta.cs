@@ -1,49 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OrakYazilimLib.Util.core
+﻿namespace OrakUtilDotNetFrm.Util.core
 {
     public class FiMeta
     {
         /**
          * TxCode (TxKodu)
         */
-        public string txKey { get; set; }
+        public string ftTxKey { get; set; }
 
-        public string txValue { get; set; }
+        public string ftTxValue { get; set; }
 
         /**
          * LnCode (LnKodu)
          * <p>
          * Key Meta Karşılık Gelen Integer Kod varsa
          */
-        public int lnKey { get; set; }
+        public int ftLnKey { get; set; }
 
         /**
          * Açıklama (Description) gibi düşünebiliriz
          */
-        public string txLabel { get; set; }
+        public string ftTxLabel { get; set; }
 
-        public string txType { get; set; }
+        public string ftTxType { get; set; }
 
         public FiMeta() {}
 
-        public FiMeta(string txKey)
+        public FiMeta(string ftTxKey)
         {
-            this.txKey = txKey;
+            this.ftTxKey = ftTxKey;
         }
 
 
         public static FiMeta BuiLn(int lnKey)
         {
-            return new FiMeta() { lnKey = lnKey };
+            return new FiMeta() { ftLnKey = lnKey };
         }
         public static FiMeta BuiLnAndKey(int lnKey, string txKey)
         {
-            return new FiMeta() { lnKey = lnKey, txKey = txKey };
+            return new FiMeta() { ftLnKey = lnKey, ftTxKey = txKey };
         }
     }
 }

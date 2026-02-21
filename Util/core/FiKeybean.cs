@@ -1,4 +1,5 @@
 ﻿using OrakUtilDotNetFrm.DbGeneric;
+using OrakUtilDotNetFrm.Util.core;
 using OrakYazilimLib.DbGeneric;
 using OrakYazilimLib.Util.Collection;
 using OrakYazilimLib.Util.config;
@@ -52,12 +53,12 @@ namespace OrakYazilimLib.Util.core
 
     public void AddFieldByFim(FiMeta fiMeta, object objValue)
     {
-      Add(fiMeta.txKey, objValue);
+      Add(fiMeta.ftTxKey, objValue);
     }
 
     public void AddFieldBy(FiMeta fiMeta, object objValue)
     {
-      Add(fiMeta.txKey, objValue);
+      Add(fiMeta.ftTxKey, objValue);
     }
 
     public void AddFieldBy(FiCol ficol, object objValue)

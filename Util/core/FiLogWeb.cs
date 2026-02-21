@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using OrakYazilimLib.DbUtil;
+using System;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OrakYazilimLib.DbUtil;
 
-namespace OrakYazilimLib.Util
+namespace OrakUtilDotNetFrm.Util.core
 {
 	public class FiLogWeb
 	{

@@ -1,4 +1,5 @@
-﻿using OrakYazilimLib.Util.core;
+﻿using OrakUtilDotNetFrm.Util.core;
+using OrakYazilimLib.Util.core;
 
 namespace OrakYazilimLib.FiContainer
 {
@@ -31,11 +32,11 @@ namespace OrakYazilimLib.FiContainer
     {
       FiComboItem fiComboItem = new FiComboItem()
       {
-        txKey = fiMeta.txKey,
-        txValue = fiMeta.txValue,
-        lnKey = fiMeta.lnKey,
-        txLabel = fiMeta.txLabel,
-        txType = fiMeta.txType
+        txKey = fiMeta.ftTxKey,
+        txValue = fiMeta.ftTxValue,
+        lnKey = fiMeta.ftLnKey,
+        txLabel = fiMeta.ftTxLabel,
+        txType = fiMeta.ftTxType
       };
       return fiComboItem;
     }
