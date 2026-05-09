@@ -13,10 +13,6 @@ namespace OrakUtilDotNetFrm.DbGeneric
      */
     public string connProfile { get; set; }
 
-    // public AbsRepoGeneric()
-    // {
-    // }
-
     public AbsRepoCore(string connProfile)
     {
       this.connProfile = connProfile;
