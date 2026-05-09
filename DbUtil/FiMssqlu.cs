@@ -1263,7 +1263,7 @@ namespace OrakYazilimLib.DbUtil
       return SqlExecuteNonQuery(sql, FiSqlParameter.ConvertToSqlParamsList(sqlParamList).ToArray());
     }
 
-    public static SqlParameter[] ConvertParamsToSqlParamArr(FiKeybean fkbParams)
+    public static SqlParameter[] ConvertParamsToSqlParamArr(Fkb fkbParams)
     {
       if (fkbParams == null)
         return new SqlParameter[]

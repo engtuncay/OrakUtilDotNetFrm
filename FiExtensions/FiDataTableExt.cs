@@ -144,23 +144,23 @@ namespace OrakYazilimLib.FiExtensions
       // Yeni bir FkbList oluştur
       var fkbList = new FkbList();
 
-      // DataTable'daki her satırı FiKeybean olarak ekle
+      // DataTable'daki her satırı Fkb olarak ekle
       foreach (DataRow row in dataTable.Rows)
       {
-        // Yeni bir FiKeybean oluştur
-        var fiKeybean = new FiKeybean();
+        // Yeni bir Fkb oluştur
+        var fiKeybean = new Fkb();
 
-        // DataTable'ın her kolonu için FiKeybean'e değer ekle
+        // DataTable'ın her kolonu için Fkb'e değer ekle
         foreach (DataColumn column in dataTable.Columns)
         {
           string columnName = column.ColumnName;
           object value = row[column] != DBNull.Value ? row[column] : null;
 
-          // Kolon adını ve değerini FiKeybean'e ekle
+          // Kolon adını ve değerini Fkb'e ekle
           fiKeybean.Add(columnName, value);
         }
 
-        // FiKeybean'i FkbList'e ekle
+        // Fkb'i FkbList'e ekle
         fkbList.Add(fiKeybean);
       }
 

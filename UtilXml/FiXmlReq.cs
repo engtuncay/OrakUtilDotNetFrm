@@ -9,11 +9,11 @@ namespace OrakYazilimLib.UtilXml
   {
     public string txXml { get; set; }
 
-    public FiKeybean fkbParams { get; set; }
+    public Fkb fkbParams { get; set; }
 
     public string txBaseUrl { get; set; }
 
-    public FiXmlReq(string prmTxXml, FiKeybean prmFkbParams)
+    public FiXmlReq(string prmTxXml, Fkb prmFkbParams)
     {
       this.txXml = prmTxXml;
       this.fkbParams = prmFkbParams;

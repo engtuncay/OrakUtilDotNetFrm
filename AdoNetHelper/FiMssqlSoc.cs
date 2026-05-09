@@ -36,7 +36,7 @@ namespace OrakYazilimLib.AdoNetHelper
 			return pars;
 		}
 
-		private SqlParameter[] ProcessParameters(FiKeybean fkbParams)
+		private SqlParameter[] ProcessParameters(Fkb fkbParams)
 		{
 			SqlParameter[] pars = fkbParams.Select(pair => new SqlParameter()
 			{
@@ -79,7 +79,7 @@ namespace OrakYazilimLib.AdoNetHelper
 			return result;
 		}
 
-		public virtual Fdr RunQuery(string query, FiKeybean parameters)
+		public virtual Fdr RunQuery(string query, Fkb parameters)
 		{
 			comm.Parameters.Clear();
 			comm.CommandText = query;

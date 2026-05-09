@@ -28,7 +28,7 @@ namespace OrakYazilimLib.Util.core
       return sb.ToString();
     }
 
-    public static string TextFkb(FiKeybean fkb)
+    public static string TextFkb(Fkb fkb)
     {
       StringBuilder sb = new StringBuilder();
       sb.AppendLine("Fkb Content:");

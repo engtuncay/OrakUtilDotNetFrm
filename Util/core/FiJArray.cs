@@ -16,7 +16,7 @@ namespace OrakYazilimLib.Util.core
         // Her elemanın tipi ne olduğunu kontrol ediyoruz
         if (element is JObject obj) // Eğer JObject ise JProperty'lere ulaşabiliriz
         {
-          FiKeybean fkbRow = new FiKeybean();
+          Fkb fkbRow = new Fkb();
 
           //Console.WriteLine("Bir JObject bulundu:");
           foreach (JProperty property in obj.Properties())

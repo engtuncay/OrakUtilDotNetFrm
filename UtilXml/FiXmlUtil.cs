@@ -11,7 +11,7 @@ namespace OrakYazilimLib.UtilXml
   public static class FiXmlUtil
   {
 
-    public static string ConvertXmlParams(string txXmlTemp, FiKeybean fkbParams)
+    public static string ConvertXmlParams(string txXmlTemp, Fkb fkbParams)
     {
       if (FiString.IsEmpty(txXmlTemp) || fkbParams == null || fkbParams.Count == 0
         // template key yoksa, değiştirilecek bir şey yok
@@ -39,7 +39,7 @@ namespace OrakYazilimLib.UtilXml
 
           StringBuilder sbChild = new StringBuilder();
 
-          foreach (FiKeybean fkbChild in fkbListChild)
+          foreach (Fkb fkbChild in fkbListChild)
           {
             string convertXmlParams = ConvertXmlParams(fkbListChild.txTemplate, fkbChild);
             sbChild.Append(convertXmlParams);
@@ -81,7 +81,7 @@ namespace OrakYazilimLib.UtilXml
       return txXmlTemp; // Güncellenmiş metni döndür
     }
 
-    public static string PrepFkbParams(string txXmlTemp, FiKeybean fkbParams)
+    public static string PrepFkbParams(string txXmlTemp, Fkb fkbParams)
     {
       var keys = fkbParams.Keys.ToList(); // Keys'i geçici bir listeye kopyalıyoruz
 

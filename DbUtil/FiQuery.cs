@@ -19,7 +19,7 @@ namespace OrakYazilimLib.DbUtil
   {
     public string sql { get; set; }
 
-    public FiKeybean fkbParams { get; set; }
+    public Fkb fkbParams { get; set; }
 
     // Query özellikleri
 
@@ -41,15 +41,15 @@ namespace OrakYazilimLib.DbUtil
       this.sql = sql;
     }
 
-    public FiQuery(FiKeybean fkbParams)
+    public FiQuery(Fkb fkbParams)
     {
       this.fkbParams = fkbParams;
     }
 
-    public FiQuery(string sql, FiKeybean fkbParams)
+    public FiQuery(string sql, Fkb fkbParams)
     {
       this.sql = sql;
-      this.fkbParams = fkbParams; // new FiKeybean(fkbParams); // orjinali bozmamak istenirse kopya oluşturlabilir
+      this.fkbParams = fkbParams; // new Fkb(fkbParams); // orjinali bozmamak istenirse kopya oluşturlabilir
     }
 
     // URFIX fkbparams ekleme yapmalı

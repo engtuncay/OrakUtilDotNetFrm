@@ -93,7 +93,7 @@ namespace OrakUtilDotNetFrm.DataContainer
     /**
      * İşlem Dönüşü Fkb Değeri
      */
-    public FiKeybean fkbVal { get; set; }
+    public Fkb fkbVal { get; set; }
 
     /**
      * İşlem Dönüşü FkbList değeri

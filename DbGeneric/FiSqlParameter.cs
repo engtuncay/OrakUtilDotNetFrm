@@ -42,7 +42,7 @@ namespace OrakUtilDotNetFrm.DbGeneric
             return list;
         }
 
-        public static List<SqlParameter> ConvertToSqlParamsList(FiKeybean fkbParams)
+        public static List<SqlParameter> ConvertToSqlParamsList(Fkb fkbParams)
         {
             if (fkbParams == null) return new List<SqlParameter>();
 

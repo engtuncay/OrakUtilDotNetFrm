@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace OrakYazilimLib.Util.Collection
 {
-    public class FkbList: List<FiKeybean>
+    public class FkbList: List<Fkb>
     {
         public string txTemplate { get; set; }
 
@@ -22,7 +22,7 @@ namespace OrakYazilimLib.Util.Collection
         {
         }
         
-        public FkbList(IEnumerable<FiKeybean> collection) : base(collection)
+        public FkbList(IEnumerable<Fkb> collection) : base(collection)
         {
         }
         
