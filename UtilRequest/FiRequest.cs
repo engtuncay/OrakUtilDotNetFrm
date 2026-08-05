@@ -16,7 +16,7 @@ namespace OrakYazilimLib.UtilRequest
     public Fkb frFkbParams { get; set; }
 
     public bool frBoShowDoc { get; set; }
-    public string frTxDb { get; set; }
+    public string frTxDbProf { get; set; }
 
     public string GetTxProfile()
     {
@@ -60,7 +60,7 @@ namespace OrakYazilimLib.UtilRequest
 
     public string GetDbConnProfile()
     {
-      return frTxProfile + (FiString.IsEmpty(frTxDb)?"": "-" + frTxDb);
+      return frTxProfile + (FiString.IsEmpty(frTxDbProf)?"": "-" + frTxDbProf);
     }
 
     public string GetConnProfile()
