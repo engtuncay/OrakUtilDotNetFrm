@@ -41,7 +41,7 @@ namespace OrakYazilimLib.DbUtil
 
     public static FiMssqlu BuiWitProfile(string connProfile)
     {
-      return new FiMssqlu(FiAppConfig.GetConnectionString(connProfile));
+      return new FiMssqlu(FiAppConfig.GetConnString(connProfile));
     }
 
     /// <summary>

@@ -26,7 +26,7 @@ namespace OrakYazilimLib.Util.config
       return fiConfig?.GetConnString(txProfile);
     }
 
-    public static string GetConnectionString(string txProfile)
+    public static string GetConnString(string txProfile)
     {
       // config dosyasından key'den sonra test ile geleni alması için.
       if (boTestMode == true) txProfile = txProfile + "-test";
@@ -38,7 +38,7 @@ namespace OrakYazilimLib.Util.config
 
       string connString = ConfigurationManager.ConnectionStrings[txProfile].ConnectionString;
 
-      FiLogWeb.logWeb("Active GetConnectionString (FiAppConfig) : " + connString);
+      FiLogWeb.logWeb("Active GetConnString (FiAppConfig) : " + connString);
       //FiLogWeb.logWeb("FiAppConfig ConnString Key : " + key);
       //FiLogWeb.logWeb("FiAppConfig ConnString : " + connString);
       return connString;
