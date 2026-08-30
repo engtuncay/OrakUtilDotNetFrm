@@ -115,7 +115,7 @@
     <Compile Include="DbUtil\FiwDataTable.cs" />
     <Compile Include="DbUtil\IFiDbConnFactory.cs" />
     <Compile Include="DbUtil\FiMetaEntity.cs" />
-    <Compile Include="DbUtil\FicQugen.cs" />
+    <Compile Include="DbUtil\FicQugenMs.cs" />
     <Compile Include="DbUtil\FiQueryUtils.cs" />
     <Compile Include="DbUtil\Fsf.cs" />
     <Compile Include="DbGeneric\FiSqlParameter.cs" />
