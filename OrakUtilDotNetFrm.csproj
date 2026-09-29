@@ -112,6 +112,7 @@
     <Compile Include="DbGeneric\FiColType.cs" />
     <Compile Include="DbGeneric\FiTypeConverter.cs" />
     <Compile Include="DbGeneric\AbsRepoGeneric.cs" />
+    <Compile Include="DbUtil\FiQugenUtil.cs" />
     <Compile Include="DbUtil\FiwDataTable.cs" />
     <Compile Include="DbUtil\IFiDbConnFactory.cs" />
     <Compile Include="DbUtil\FiMetaEntity.cs" />
