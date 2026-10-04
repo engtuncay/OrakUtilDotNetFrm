@@ -1,10 +1,8 @@
-﻿using OrakUtilDotNetFrm.FiContainer;
-
-namespace OrakUtilDotNetFrm.DataContainer
+﻿namespace OrakUtilDotNetFrm.FiContainer
 {
   public static class DtoFdr1
   {
-    public static object GenFdr1<TP>(Fdr<TP> fdr)
+    public static object GenFdr1<TP>(FdrGen<TP> fdr)
     {
       dynamic obj = new System.Dynamic.ExpandoObject();
 

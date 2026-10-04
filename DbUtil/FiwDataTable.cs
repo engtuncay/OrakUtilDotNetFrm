@@ -1,5 +1,4 @@
-﻿using OrakUtilDotNetFrm.DataContainer;
-using OrakUtilDotNetFrm.FiContainer;
+﻿using OrakUtilDotNetFrm.FiContainer;
 using OrakYazilimLib.Util.config;
 using System;
 using System.Data;
@@ -57,11 +56,11 @@ namespace OrakYazilimLib.DbUtil
     /// <param name="columnName">Sütun adı</param>
     /// <param name="defaultValue"></param>
     /// <returns>İlk satırdaki sütun verisinin belirtilen türde döndürülmüş hali</returns>
-    public Fdr<T> GetValueFromFirstRowV2<T>(string columnName, T defaultValue = default)
+    public FdrGen<T> GetValueFromFirstRowV2<T>(string columnName, T defaultValue = default)
     {
       //FiAppConfig.fiLogManager?.LogMessage("col : " + columnName);
 
-      Fdr<T> fdrMain = new Fdr<T>();
+      FdrGen<T> fdrMain = new FdrGen<T>();
 
       if (dataTable != null && dataTable.Rows.Count > 0)
       {

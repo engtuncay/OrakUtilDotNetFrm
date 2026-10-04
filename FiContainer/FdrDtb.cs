@@ -1,9 +1,8 @@
-﻿using OrakUtilDotNetFrm.FiContainer;
-using System.Data;
+﻿using System.Data;
 
-namespace OrakUtilDotNetFrm.DataContainer
+namespace OrakUtilDotNetFrm.FiContainer
 {
-  public class FdrDtb : Fdr<DataTable>
+  public class FdrDtb : FdrGen<DataTable>
   {
     public FdrDtb(bool boResult) : base(boResult)
     {

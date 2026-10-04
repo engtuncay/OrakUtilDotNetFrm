@@ -1,9 +1,6 @@
-﻿using OrakUtilDotNetFrm.DbGeneric;
-using OrakUtilDotNetFrm.FiContainer;
-using OrakYazilimLib.Util.Collection;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace OrakUtilDotNetFrm.DataContainer
+namespace OrakUtilDotNetFrm.FiContainer
 {
   public class DtoFiCol
   {

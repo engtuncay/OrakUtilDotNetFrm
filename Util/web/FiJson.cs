@@ -4,7 +4,6 @@ using System.Data;
 using System.Web;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
-using OrakUtilDotNetFrm.DataContainer;
 using OrakUtilDotNetFrm.FiContainer;
 //using Newtonsoft.Json;
 
@@ -36,7 +35,7 @@ namespace OrakYazilimLib.UtilWeb
             HttpContext.Current.ApplicationInstance.CompleteRequest();
         }
 
-        public static void jsonFiResponse<T>(Fdr<T> data, HttpContext context)
+        public static void jsonFiResponse<T>(FdrGen<T> data, HttpContext context)
         {
             string response = JsonConvert.SerializeObject(data);
             // context jobs
@@ -133,14 +132,14 @@ namespace OrakYazilimLib.UtilWeb
             HttpContext.Current.ApplicationInstance.CompleteRequest();
         }
 
-        public static void jsonResponseFromDataTableUni(Fdr<DataTable> fiResponseDataTable, HttpContext context)
+        public static void jsonResponseFromDataTableUni(FdrGen<DataTable> fiResponseDataTable, HttpContext context)
         {
             jsonResponseFromDataTableUni(fiResponseDataTable.obReturn,context);
         }
 
         public static void jsonFiResponseTrue(HttpContext context)
         {
-            Fdr<bool> fiResponse = new Fdr<bool>();
+            FdrGen<bool> fiResponse = new FdrGen<bool>();
             fiResponse.obReturn = true;
 
             string response = JsonConvert.SerializeObject(fiResponse);
@@ -155,7 +154,7 @@ namespace OrakYazilimLib.UtilWeb
 
         public static void JsonFiResponseMessage(bool b, string errorMessage,HttpContext context)
         {
-            Fdr<string> fiResponse = new Fdr<string>();
+            FdrGen<string> fiResponse = new FdrGen<string>();
             fiResponse.obReturn = null;
             fiResponse.txErrorMsgShort = errorMessage;
             fiResponse.blResult = false;

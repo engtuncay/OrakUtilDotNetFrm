@@ -1,5 +1,4 @@
-﻿using OrakUtilDotNetFrm.DataContainer;
-using OrakUtilDotNetFrm.DbGeneric;
+﻿using OrakUtilDotNetFrm.DbGeneric;
 using OrakUtilDotNetFrm.DbUtil;
 using OrakUtilDotNetFrm.FiContainer;
 using OrakUtilDotNetFrm.Util.core;
@@ -55,9 +54,9 @@ namespace OrakYazilimLib.DbUtil
       return new FiMssqlu(connString);
     }
 
-    public Fdr<DataTable> SqlSelect(FiQuery fiQuery)
+    public FdrGen<DataTable> SqlSelect(FiQuery fiQuery)
     {
-      var fdrMain = new Fdr<DataTable>();
+      var fdrMain = new FdrGen<DataTable>();
 
       using SqlConnection sqConn = new SqlConnection(connString);
       string query = FiQueryUtils.FixSqlProblems(fiQuery.sql);
@@ -239,11 +238,11 @@ namespace OrakYazilimLib.DbUtil
 //command.Dispose();
 
     }
-    public Fdr<int> SqlExecuteNonQuery(string sql, SqlParameter[] prms)
+    public FdrGen<int> SqlExecuteNonQuery(string sql, SqlParameter[] prms)
     {
 
       SqlConnection connection = new SqlConnection(connString);
-      Fdr<int> fdr = new Fdr<int>();
+      FdrGen<int> fdr = new FdrGen<int>();
 
       using (connection)
       {
@@ -319,14 +318,14 @@ namespace OrakYazilimLib.DbUtil
 
     }
 
-    public Fdr<T> SqlExecuteScalar<T>(string sql, List<FiSqlParameter> listParam)
+    public FdrGen<T> SqlExecuteScalar<T>(string sql, List<FiSqlParameter> listParam)
     {
 
       SqlConnection connection = new SqlConnection(connString);
       var prms = FiSqlParameter.ConvertToSqlParamsList(listParam).ToArray();
 
       object result = null;
-      var fdrMain = new Fdr<T>();
+      var fdrMain = new FdrGen<T>();
 
       using (connection)
       {
@@ -391,14 +390,14 @@ namespace OrakYazilimLib.DbUtil
       return fdrMain;
     }
 
-    public Fdr<T> SqlExecuteScalar<T>(FiMsQuery fiMsQuery)
+    public FdrGen<T> SqlExecuteScalar<T>(FiMsQuery fiMsQuery)
     {
 
       SqlConnection connection = new SqlConnection(connString);
       var prms = FiSqlParameter.ConvertToSqlParamsList(fiMsQuery.listParams).ToArray();
 
       object result = null;
-      var fiResponse = new Fdr<T>();
+      var fiResponse = new FdrGen<T>();
 
       using (connection)
       {
@@ -468,14 +467,14 @@ namespace OrakYazilimLib.DbUtil
     //    return SqlExecuteDataTable(fiSqlQuery.sql, fiSqlQuery.GetListParams());
     //}
 
-    public Fdr<DataTable> SqlExecuteDataTable(FiMsQuery fiMsQuery)
+    public FdrGen<DataTable> SqlExecuteDataTable(FiMsQuery fiMsQuery)
     {
 
       DataSet ds = new DataSet();
       SqlConnection connection = new SqlConnection(connString);
       var arrSqlParams = FiSqlParameter.ConvertToSqlParamsList(fiMsQuery.getListParams()).ToArray();
 
-      var fiReturn = new Fdr<DataTable>();
+      var fiReturn = new FdrGen<DataTable>();
 
       using (connection)
       {
@@ -523,14 +522,14 @@ namespace OrakYazilimLib.DbUtil
       return fiReturn;
     }
 
-    public Fdr<DataTable> SqlExecuteDataTable(FiQuery fiQuery)
+    public FdrGen<DataTable> SqlExecuteDataTable(FiQuery fiQuery)
     {
 
       DataSet ds = new DataSet();
       SqlConnection connection = new SqlConnection(connString);
       var arrSqlParams = FiSqlParameter.ConvertToSqlParamsList(fiQuery.fkbParams).ToArray();
 
-      var fdrMain = new Fdr<DataTable>();
+      var fdrMain = new FdrGen<DataTable>();
 
       using (connection)
       {
@@ -580,9 +579,9 @@ namespace OrakYazilimLib.DbUtil
 
       return fdrMain;
     }
-    public Fdr<DataTable> SqlExecuteDataTable(string sql, List<FiSqlParameter> listParam)
+    public FdrGen<DataTable> SqlExecuteDataTable(string sql, List<FiSqlParameter> listParam)
     {
-      var fdrMain = new Fdr<DataTable>();
+      var fdrMain = new FdrGen<DataTable>();
 
       //Console.WriteLine("SqlExecuteDataTable");
       FiAppConfig.fiLog?.Debug("SqlExecuteDataTable called");
@@ -1259,7 +1258,7 @@ namespace OrakYazilimLib.DbUtil
       return new FiMssqlu(connStr);
     }
 
-    public Fdr<int> SqlExecuteNonQuery(string sql, List<FiSqlParameter> sqlParamList)
+    public FdrGen<int> SqlExecuteNonQuery(string sql, List<FiSqlParameter> sqlParamList)
     {
       return SqlExecuteNonQuery(sql, FiSqlParameter.ConvertToSqlParamsList(sqlParamList).ToArray());
     }

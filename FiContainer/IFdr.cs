@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace OrakUtilDotNetFrm.DataContainer
+namespace OrakUtilDotNetFrm.FiContainer
 {
   public interface IFdr
   {
