@@ -1,4 +1,4 @@
-﻿namespace OrakUtilDotNetFrm.Util.core
+﻿namespace OrakUtilDotNetFrm.FiContainer
 {
     public class FiMeta
     {

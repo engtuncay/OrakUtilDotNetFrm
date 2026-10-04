@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 
-namespace OrakYazilimLib.Util.core
+namespace OrakUtilDotNetFrm.FiContainer
 {
 	public class FiDataTable2
 	{

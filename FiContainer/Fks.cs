@@ -1,22 +1,17 @@
-﻿using OrakYazilimLib.DbGeneric;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace OrakYazilimLib.Util.core
+namespace OrakUtilDotNetFrm.FiContainer
 {
-    public class FiKeyString : Dictionary<string, string>
+    public class Fks : Dictionary<string, string>
     {
         
         //public HashSet<FiCol> setFiCol { get; set; }
         
-        public FiKeyString()
+        public Fks()
         {
         }
 
-        public FiKeyString(IDictionary<string, string> dictionary) : base(dictionary)
+        public Fks(IDictionary<string, string> dictionary) : base(dictionary)
         {
         }
         

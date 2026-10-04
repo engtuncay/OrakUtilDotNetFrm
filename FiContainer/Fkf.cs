@@ -1,26 +1,22 @@
 ﻿using OrakUtilDotNetFrm.DbGeneric;
-using OrakYazilimLib.DbGeneric;
 using OrakYazilimLib.Util.Collection;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OrakYazilimLib.Util.core
+namespace OrakUtilDotNetFrm.FiContainer
 {
-  public class FiKeycol : Dictionary<string, FiCol>
+  public class Fkf : Dictionary<string, FiCol>
   {
 
     public HashSet<FiCol> setFiCol { get; set; }
 
     //public string txTemplate {get; set;}
 
-    public FiKeycol()
+    public Fkf()
     {
     }
 
-    public FiKeycol(IDictionary<string, FiCol> dictionary) : base(dictionary)
+    public Fkf(IDictionary<string, FiCol> dictionary) : base(dictionary)
     {
     }
 

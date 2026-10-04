@@ -1,15 +1,11 @@
 ﻿using OrakUtilDotNetFrm.DbGeneric;
-using OrakUtilDotNetFrm.Util.core;
-using OrakYazilimLib.DbGeneric;
 using OrakYazilimLib.Util.Collection;
-using System;
+using OrakYazilimLib.Util.core;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OrakYazilimLib.Util.core
+namespace OrakUtilDotNetFrm.FiContainer
 {
   /**
    * Sınıf test edilmeli - kontrol yapılmadı

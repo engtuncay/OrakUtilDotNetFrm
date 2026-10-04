@@ -1,4 +1,5 @@
-﻿using OrakUtilDotNetFrm.Util.core;
+﻿using OrakUtilDotNetFrm.FiContainer;
+using OrakUtilDotNetFrm.Util.core;
 
 namespace OrakYazilimLib.FiMetas.FimStore
 {

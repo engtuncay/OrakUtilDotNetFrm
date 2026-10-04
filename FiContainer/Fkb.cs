@@ -1,16 +1,12 @@
 ﻿using OrakUtilDotNetFrm.DbGeneric;
-using OrakUtilDotNetFrm.Util.core;
-using OrakYazilimLib.DbGeneric;
 using OrakYazilimLib.Util.Collection;
 using OrakYazilimLib.Util.config;
-using System;
+using OrakYazilimLib.Util.core;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OrakYazilimLib.Util.core
+namespace OrakUtilDotNetFrm.FiContainer
 {
   public class Fkb : Dictionary<string, object>
   {

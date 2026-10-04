@@ -1,4 +1,6 @@
-﻿using OrakYazilimLib.AdoNetHelper;
+﻿using OrakUtilDotNetFrm;
+using OrakUtilDotNetFrm.FiContainer;
+using OrakYazilimLib.AdoNetHelper;
 using OrakYazilimLib.Util.core;
 using System.Collections.Generic;
 
@@ -12,7 +14,7 @@ namespace OrakYazilimLib.Util.Collection
 
         public FicList ficList { get; set; }
 
-        public FiKeycol fiKeycol { get; set; }
+        public Fkf fkf { get; set; }
 
         public FkbList()
         {
