@@ -1,10 +1,6 @@
-﻿using OrakUtilDotNetFrm.FiContainer;
-using OrakUtilDotNetFrm.Util.core;
-using OrakYazilimLib.AdoNetHelper;
-using OrakYazilimLib.Util.core;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace OrakYazilimLib.Util.Collection
+namespace OrakUtilDotNetFrm.FiContainer
 {
     public class FimList: List<FiMeta>
     {

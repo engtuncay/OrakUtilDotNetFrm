@@ -1,9 +1,8 @@
-﻿using OrakYazilimLib.DbGeneric;
-using OrakYazilimLib.Util.Collection;
+﻿using OrakUtilDotNetFrm.DbGeneric;
 using OrakYazilimLib.Util.core;
 using System;
 
-namespace OrakUtilDotNetFrm.DbGeneric
+namespace OrakUtilDotNetFrm.FiContainer
 {
 
   public class FiCol

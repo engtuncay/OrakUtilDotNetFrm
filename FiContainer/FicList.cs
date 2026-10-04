@@ -1,8 +1,7 @@
 ﻿using OrakUtilDotNetFrm.DbGeneric;
-using OrakYazilimLib.DbGeneric;
 using System.Collections.Generic;
 
-namespace OrakYazilimLib.Util.Collection
+namespace OrakUtilDotNetFrm.FiContainer
 {
     public class FicList: List<FiCol>
     {

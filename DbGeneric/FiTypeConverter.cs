@@ -1,4 +1,6 @@
-﻿namespace OrakUtilDotNetFrm.DbGeneric
+﻿using OrakUtilDotNetFrm.FiContainer;
+
+namespace OrakUtilDotNetFrm.DbGeneric
 {
   public static class FiTypeConverter
   {

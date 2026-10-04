@@ -1,4 +1,6 @@
-﻿namespace OrakUtilDotNetFrm.DataContainer
+﻿using OrakUtilDotNetFrm.FiContainer;
+
+namespace OrakUtilDotNetFrm.DataContainer
 {
   public static class DtoFdr1
   {

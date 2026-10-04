@@ -108,7 +108,6 @@
     <Compile Include="DataContainer\Fdr.cs" />
     <Compile Include="DbAttribute\IsPK.cs" />
     <Compile Include="DbGeneric\AbsRepoSoap.cs" />
-    <Compile Include="DbGeneric\FiCol.cs" />
     <Compile Include="DbGeneric\FiColType.cs" />
     <Compile Include="DbGeneric\FiTypeConverter.cs" />
     <Compile Include="DbGeneric\AbsRepoGeneric.cs" />
@@ -141,10 +140,14 @@
     <Compile Include="DbUtil\FiMsQuery.cs" />
     <Compile Include="DemoEntity\DemoMkfields.cs" />
     <Compile Include="DemoEntity\MysqlQueryDemo.cs" />
+    <Compile Include="FiContainer\Fdr.cs" />
+    <Compile Include="FiContainer\FicList.cs" />
+    <Compile Include="FiContainer\FiCol.cs" />
     <Compile Include="FiContainer\FiComboItem.cs" />
     <Compile Include="FiContainer\FiDatabean.cs" />
     <Compile Include="FiContainer\FiDataTable2.cs" />
     <Compile Include="FiContainer\FiMeta.cs" />
+    <Compile Include="FiContainer\FimList.cs" />
     <Compile Include="FiContainer\Fkb.cs" />
     <Compile Include="FiContainer\Fkf.cs" />
     <Compile Include="FiContainer\Fks.cs" />
@@ -165,9 +168,7 @@
     <Compile Include="UtilXml\FiXmlUtil.cs" />
     <Compile Include="UtilXml\FiXmlPars.cs" />
     <Compile Include="UtilXml\FiXmlReq.cs" />
-    <Compile Include="Util\Collection\FimList.cs" />
     <Compile Include="Util\Collection\FkbList.cs" />
-    <Compile Include="Util\ColStruct\FicList.cs" />
     <Compile Include="Util\ColStruct\IFiTableMeta.cs" />
     <Compile Include="Util\config\IFiConfigManager.cs" />
     <Compile Include="Util\config\IFiLogManager.cs" />
